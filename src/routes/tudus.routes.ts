@@ -31,7 +31,7 @@ tudusRouter.get('/', async (req, res, next) => {
 });
 
 tudusRouter.put('/:id', async (req, res, next) => {
-    const {  textTudu } = req.body
+    const { textTudu } = req.body
     const { id } = req.params;
     const tudu = await Tudu.findByPk(id);
     if (tudu) {

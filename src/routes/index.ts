@@ -9,6 +9,4 @@ const routes = Router();
 
 routes.use('/tudus', tudusRouter);
 
-
-
 export default routes;

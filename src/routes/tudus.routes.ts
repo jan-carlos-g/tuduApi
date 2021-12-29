@@ -4,8 +4,6 @@ import { Tudu } from "../database/models";
 import { CorrectLimit, CorrectOffset, CorrectPage } from "../services/queryParamsServices";
 const tudusRouter = Router();
 
-
-
 tudusRouter.post('/', async (req, res, next) => {
     console.log(req.body)
     const { textTudu } = req.body

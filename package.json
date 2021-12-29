@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "src/app.ts",
+  "license": "MIT",
   "devDependencies": {
     "@types/cors": "^2.8.12",
     "@types/sequelize": "^4.28.11",
@@ -11,7 +12,8 @@
     "sequelize": "^7.0.0-alpha.2"
   },
   "scripts": {
-    "dev": "ts-node-dev --transpile-only src/app.ts"
+    "dev": "ts-node-dev --transpile-only src/app.ts",
+    "start":"tsc && node build/app.js"
   },
   "dependencies": {
     "@types/express": "^4.17.13",
